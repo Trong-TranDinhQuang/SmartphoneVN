@@ -1,0 +1,42 @@
+<app-header></app-header>
+<div class="small-container single-product" style="display: flex">
+  <div class="row">
+    <div class="col-2 d-flex">
+      <img src="{{ data[0]?.imgdef }}" width="100%" id="productImg" />
+      <div class="smallimgrow">
+        <div
+          class="small-img-col"
+          *ngFor="let item1 of data[0]?.detail"
+          (click)="tongleImg(item1?.src)"
+        >
+          <img
+            class="asda"
+            src="{{ item1?.src }}"
+            width="100%"
+            id="productImg"
+            class="smaill-ing"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-2">
+    <p id="link">home /product</p>
+    <h1 id="title">{{ data[0]?.title }}</h1>
+    <h4 id="old">{{ data[0]?.old }}</h4>
+    <select id="option">
+      <option>128GB</option>
+      <option>255GB</option>
+      <option>512GB</option>
+      <option>1TB</option>
+      <option>64GB</option>
+    </select>
+    <input type="number" value="1" />
+    <a href="" class="btn">Thêm vào giỏ hàng</a>
+    <h3>ĐẶC ĐIỂM NỔI BẬT<i class="fa fa-indent"></i></h3>
+    <br />
+    <p id="doc">
+      {{ data[0]?.doc }}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,107 @@
+<div class="app__container">
+    <div class="grid">
+        <div class="grid__row app__content">
+            <div class="grid__column-2">
+                <nav class="category">
+            
+                    <h3 class="category__heading">
+                        <i class="category__heading-icon fas fa-list"></i>
+                        Danh mục
+                    </h3>
+                    <ul class="category-list">
+                        <li class="category-item category-item--active">
+                            <a href="#" class="category-item__link">Tất cả</a>
+                        </li>
+                        <li *ngFor="let item of category" class="category-item">
+                            <a href="#" class="category-item__link">{{item.text}}</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="gird__column-10">
+                <div class="home-filter">
+                    <span class="home-filter__label">Sắp xếp theo</span>
+                    <button class="home-filter__btn btn ">Phổ biến</button>
+                    <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                    <button class="home-filter__btn btn">Bán chạy</button>
+  
+                    <div class="select-input">
+                        <span class="select-input__label">Giá</span>
+                        <i class="select-input__icon fas fa-angle-down"></i>
+                        <ul class="select-input__list">
+                            <li class="select-input__item">
+                                <a href="" class="select-input__link">Giá thấp đến cao</a>
+                                
+                            </li>
+                            <li class="select-input__item">
+                               
+                                <a href="" class="select-input__link">Giá cao đến thấp</a>
+                            </li>
+                        </ul>
+                    </div>
+  
+                    <div class="home-filter__page">
+                        <span class="home-filter__page-num">
+                        <span class="home-filter__page-current">1</span>/14
+                        
+                    </span>
+                        <div class="home-filter__page-control">
+                            <a href="" class="home-filter__page-btn home-filter__page-btn--disabeld">
+                                <i class="home-filter__page-icon fas fa-angle-left"></i>
+                            </a>
+                            <a href="" class="home-filter__page-btn">
+                                <i class="home-filter__page-icon fas fa-angle-right"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="home-product">
+                    <!--  grid-row-column -->
+                    <div class="grid__row">
+                        <!-- Product item -->
+                        <div class="gird__column-2-4" *ngFor="let item of product">
+                            <a class="home-product-item" [routerLink]="['/product',item.id]">
+                                <div class="home-product-item__img" style="background-image: url({{item.url}})"></div>
+                                <h4 class="home-product-item__name">{{item.name}} </h4>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">{{item.old}}</span>
+                                    <span class="home-product-item__price-current">{{item.current}}</span>
+                                </div>
+                                <div class="home-product-item__action">
+                                    
+                                    <span class="home-product-item__like home-product-item__like--liked">
+                                    <!-- <i class="fas fa-heart"></i> -->
+                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="home-product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+  
+                                    </div>
+                                    <span class="home-product-item__sold">{{item.sold}}</span>
+                                </div>
+                                <div class="home-product-item__origin">
+                                    <span class="home-product-item__brand">{{item.brand}}</span>
+                                    <span class="home-product-item__origin-name">{{item.origin_name}}</span>
+                                </div>
+                                <div class="home-product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>{{item.check}}</span>
+                                    
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">{{item.percent}}</span>
+                                    <span class="home-product-item__sale-off-label">{{item.label}}</span>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

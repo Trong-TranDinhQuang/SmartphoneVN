@@ -1,0 +1,354 @@
+<header class="header">
+    <div class="grid">
+      <nav class="heder__navbar">
+        <ul class="header__navbar-list">
+          <a href="/" class="header__navbar-item header__navbar-item--separate"
+            >Trang Chủ</a
+          >
+          <li
+            class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate"
+          >
+            Ứng Dụng IOS-Android
+            <div class="header__qr">
+              <img
+                src="assets/images/qrcode.png"
+                alt="QR_code"
+                class="header__qr-img"
+              />
+              <div class="header__qr-apps">
+                <a href="" class="header__qr_link">
+                  <img
+                    src="assets/images/googleplay.png"
+                    alt="Google_Play"
+                    class="header__qr-download-img"
+                  />
+                </a>
+                <a href="" class="header__qr_link">
+                  <img
+                    src="assets/images/appstore.png"
+                    alt="Apps_Store"
+                    class="header__qr-download-img"
+                  />
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="header__navbar-item header__navbar-item--separate">
+            Trở Thành NV Bán Hàng
+          </li>
+          <li class="header__navbar-item">
+            <span class="header__navbar-title--no-pointer">Kết Nối</span>
+  
+            <a
+              href="https://www.facebook.com/quangtrong99x"
+              class="header__navbar-icon-link"
+            >
+              <i class="header__navbar-icon fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/tdqtrong/"
+              class="header__navbar-icon-link"
+            >
+              <i class="header__navbar-icon fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="header__navbar--list">
+          <li class="header__navbar-item header__navbar-item--has-notification">
+            <a href="" class="header__navbar-item-link">
+              <i class="far fa-bell"></i> Thông Báo
+            </a>
+            <div class="header__notification">
+              <header class="header__notification-herder">
+                <h3>Thông Báo Mới Nhận</h3>
+              </header>
+              <ul class="header__notification-list">
+                <li
+                  class="header__notification-item header__notification-item--viewed"
+                >
+                  <a href="" class="header__notification-link">
+                    <img
+                      src="https://www.petmart.vn/wp-content/uploads/2019/10/thuc-an-cho-cho-mec-wild-taste-nutrition-for-poodle-300x300.jpg"
+                      alt=""
+                      class="header__notification-img"
+                    />
+                    <div class="header__notification-info">
+                      <span class="header__notification-name"
+                        >Thức ăn cho chó MKB MEC Wild Taste Nutrition for
+                        Poodle</span
+                      >
+                      <span class="header__notification-description"
+                        >Hot Sale! ưu đãi từ 30% off</span
+                      >
+                    </div>
+                  </a>
+                </li>
+  
+                <li
+                  class="header__notification-item header__notification-item--viewed"
+                >
+                  <a href="" class="header__notification-link">
+                    <img
+                      src="https://www.petmart.vn/wp-content/uploads/2015/11/xich-cho-cho-dai-nguc-co-dien-hand-in-hand-classic-adjustable-harness-leash-1-400x400.jpg "
+                      alt=""
+                      class="header__notification-img"
+                    />
+                    <div class="header__notification-info">
+                      <span class="header__notification-name"
+                        >Xích cho chó đai ngực HAND IN HAND Classic Adjustable
+                        Harness Leash</span
+                      >
+                      <span class="header__notification-description">
+                        ưu đãi từ 10% off HAND IN HAND</span
+                      >
+                    </div>
+                  </a>
+                </li>
+  
+                <li
+                  class="header__notification-item header__notification-item--viewed"
+                >
+                  <a href="" class="header__notification-link">
+                    <img
+                      src="https://www.petmart.vn/wp-content/uploads/2015/09/chuong-meo-bang-go-2-ngan-san-nhua-richell-rc18-400x400.jpg "
+                      alt=""
+                      class="header__notification-img"
+                    />
+                    <div class="header__notification-info">
+                      <span class="header__notification-name"
+                        >Chuồng chó mèo bằng gỗ 2 ngăn sàn nhựa RICHELL RC18</span
+                      >
+                      <span class="header__notification-description">
+                        ưu đãi từ 10% off
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <footer class="header__notification-footer">
+                <a href="" class="header__notification-footer-btn">Xem tất cả</a>
+              </footer>
+            </div>
+          </li>
+  
+          <li class="header__navbar-item">
+            <a href="" class="header__navbar-item-link">
+              <i class="far fa-question-circle"></i> Hỗ Trợ</a
+            >
+          </li>
+  
+          <li
+              [routerLink]="['/Register']" class="header__navbar-item header__navbar-item--strong header__navbar-item--separate"
+            >
+              Đăng Ký
+            </li>
+    
+            <li [routerLink]="['/Login']" class="header__navbar-item header__navbar-item--strong">
+              Đăng Nhập
+            </li>
+          <!-- <li class="header__navbar-item header__navbar-user">
+            <img
+              src="./assets/images/user.jpg"
+              alt=""
+              class="header__navbar-user-img"
+            />
+            <span class="header__navbar-user-name">Quang Trọng</span>
+            <ul class="header__navbar-user-menu">
+              <li class="header__navbar-user-item">
+                <a href="">Tài khoản của tôi</a>
+              </li>
+              <li class="header__navbar-user-item">
+                <a href="">Địa chỉ của tôi</a>
+              </li>
+              <li class="header__navbar-user-item">
+                <a href="">Đơn mua</a>
+              </li>
+              <li
+                class="header__navbar-user-item header__navbar-user-item--separate"
+              >
+                <a href="">Đăng xuất</a>
+              </li>
+            </ul>
+          </li> -->
+        </ul>
+      </nav>
+      <!-- Header With Search -->
+      <div class="header-with-search">
+        <div class="header__logo">
+          <a href="/" class="header__logo-link">
+            <img
+              src="https://i.pinimg.com/originals/2e/3d/b1/2e3db199b0952cdfbc999653e9f2a63f.png"
+              alt=""
+              class="header__logo-img"
+            />
+          </a>
+        </div>
+        <div class="header__search">
+          <div class="header__search-input-wrap">
+            <input
+              type="text"
+              class="header__search-input"
+              placeholder="Nhập tìm kiếm sản phẩm"/>
+            <!-- search history -->
+            <div class="header__search-history">
+              <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+              <ul
+                *ngFor="let item of history"
+                class="header__search-history-list"
+              >
+                <li class="header__search-history-item">
+                  <a href="">{{ item.text }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__search-select">
+            <span class="header__search-select-label">Trong shops</span>
+            <i class="header__search-select-icon fas fa-angle-down"></i>
+            <ul class="header__search-option">
+              <li
+                class="header__search-option-item header__search-option-item--active"
+              >
+                <span>Trong shop</span>
+                <i class="fas fa-check"></i>
+              </li>
+              <li class="header__search-option-item">
+                <span>Ngoài shop</span>
+                <i class="fas fa-check"></i>
+              </li>
+            </ul>
+          </div>
+          <button class="header__search-btn" type="submit" (click)="clickme()">
+            <i class="header__search-btn-icon fas fa-search"></i>
+          </button>
+        </div>
+        <!-- cart layout -->
+        <div class="header__cart">
+          <div class="header__cart-wrap">
+            <i class="header__cart-icon fas fa-shopping-cart"></i>
+            <span class="header__cart-notice">3</span>
+            <!-- hast cart:header__cart-list--no-cart -->
+            <div class="header__cart-list">
+              <img
+                src="./assets/images/empty-cart-png.png"
+                alt=""
+                class="header__cart-no-cart-img"
+              />
+              <span class="header__cart-list-no-cart-msg">
+                Chưa có sản phẩm!
+              </span>
+              <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+              <ul class="header__cart-list-item">
+                <!-- Cart Item -->
+                <li class="header__cart-item">
+                  <img
+                    src="https://www.petmart.vn/wp-content/uploads/2015/09/chuong-go-cho-cho-meo-RICHELL-rc03-300x300.jpg"
+                    alt=""
+                    class="header__cart-img"
+                  />
+                  <div class="header__cart-item-info">
+                    <div class="header__cart-item-head">
+                      <h5 class="header__cart-item-name">
+                        Chuồng gỗ cho chó mèo
+                      </h5>
+                      <div class="header__cart-item-price-wrap">
+                        <span class="header__cart-item-price">2.450.000 ₫</span>
+                        <span class="header__cart-item-multiply">x</span>
+                        <span class="header__cart-item-qnt">1</span>
+                      </div>
+                    </div>
+                    <div class="header__cart-item-body">
+                      <span class="header__cart-item-description">
+                        Phân loại hàng: Mới (hot)
+                      </span>
+                      <span class="header__cart-item-remove">Xóa</span>
+                    </div>
+                  </div>
+                </li>
+  
+                <li class="header__cart-item">
+                  <img
+                    src="https://www.petmart.vn/wp-content/uploads/2013/06/thuoc-tri-giun-tim-cho-cho-be-merial-heartgad-plus-300x300.jpg"
+                    alt=""
+                    class="header__cart-img"
+                  />
+                  <div class="header__cart-item-info">
+                    <div class="header__cart-item-head">
+                      <h5 class="header__cart-item-name">
+                        Thuốc trị giun tim cho chó bé
+                      </h5>
+                      <div class="header__cart-item-price-wrap">
+                        <span class="header__cart-item-price">105.000 ₫</span>
+                        <span class="header__cart-item-multiply">x</span>
+                        <span class="header__cart-item-qnt">2</span>
+                      </div>
+                    </div>
+                    <div class="header__cart-item-body">
+                      <span class="header__cart-item-description">
+                        Phân loại hàng: Mới (hot)
+                      </span>
+                      <span class="header__cart-item-remove">Xóa</span>
+                    </div>
+                  </div>
+                </li>
+  
+                <li class="header__cart-item">
+                  <img
+                    src="https://www.petmart.vn/wp-content/uploads/2021/08/tui-dung-cho-meo-trong-suot-loffe-pet-shoulder-bag-300x300.jpg"
+                    alt=""
+                    class="header__cart-img"
+                  />
+                  <div class="header__cart-item-info">
+                    <div class="header__cart-item-head">
+                      <h5 class="header__cart-item-name">
+                        Túi đựng chó mèo trong suốt
+                      </h5>
+                      <div class="header__cart-item-price-wrap">
+                        <span class="header__cart-item-price">495.000 ₫</span>
+                        <span class="header__cart-item-multiply">x</span>
+                        <span class="header__cart-item-qnt">5</span>
+                      </div>
+                    </div>
+                    <div class="header__cart-item-body">
+                      <span class="header__cart-item-description">
+                        Phân loại hàng: Mới (hot)
+                      </span>
+                      <span class="header__cart-item-remove">Xóa</span>
+                    </div>
+                  </div>
+                </li>
+  
+                <li class="header__cart-item">
+                  <img
+                    src="https://www.petmart.vn/wp-content/uploads/2015/10/nha-cay-cho-meo-cat-tree-qq80050-13-300x300.jpg"
+                    alt=""
+                    class="header__cart-img"
+                  />
+                  <div class="header__cart-item-info">
+                    <div class="header__cart-item-head">
+                      <h5 class="header__cart-item-name">
+                        Nhà cây cho mèo Cat Tree
+                      </h5>
+                      <div class="header__cart-item-price-wrap">
+                        <span class="header__cart-item-price">4.000.000 ₫</span>
+                        <span class="header__cart-item-multiply">x</span>
+                        <span class="header__cart-item-qnt">1</span>
+                      </div>
+                    </div>
+                    <div class="header__cart-item-body">
+                      <span class="header__cart-item-description">
+                        Phân loại hàng: Mới (hot)
+                      </span>
+                      <span class="header__cart-item-remove">Xóa</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <a class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  

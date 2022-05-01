@@ -1,3 +1,4 @@
+<app-header></app-header>
 <div class="app__container">
     <div class="grid">
         <div class="grid__row app__content">
@@ -10,10 +11,11 @@
                     </h3>
                     <ul class="category-list">
                         <li class="category-item category-item--active">
-                            <a href="#" class="category-item__link">Tất cả</a>
+                            <a href="" class="category-item__link">Tất cả</a>
+                            <a href="" class="category-item__link">Quay lại</a>
                         </li>
                         <li *ngFor="let item of category" class="category-item">
-                            <a href={{item.routerLink}} class="category-item__link">{{item.text}}</a>
+                            <a href="t{{item.routerLink}}"  class="category-item__link">{{item.text}}</a>
                         </li>
                     </ul>
                 </nav>
@@ -61,7 +63,7 @@
                     <div class="grid__row">
                         <!-- Product item -->
                         <div class="gird__column-2-4" *ngFor="let item of product">
-                            <a class="home-product-item" [routerLink]="['/product',item.id]">
+                            <a class="home-product-item" >
                                 <div class="home-product-item__img" style="background-image: url({{item.url}})"></div>
                                 <h4 class="home-product-item__name">{{item.name}} </h4>
                                 <div class="home-product-item__price">

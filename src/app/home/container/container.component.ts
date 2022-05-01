@@ -10,43 +10,63 @@ export class ContainerComponent implements OnInit {
 
 {
   id:1,
-  text:'Điện Thoại'
+  text:'Điện Thoại',
+  routerLink: '/telephone'
 },
 {
   id:1,
-  text:'Laptop,PC,Màn Hình'
+  text:'Laptop,PC,Màn Hình',
+  routerLink: '/laptop'
 },
 {
   id:1,
-  text:'Tablet'
+  text:'Tablet',
+  routerLink: '/tablet'
 },
 {
   id:1,
-  text:'Âm Thanh'
+  text:'Âm Thanh',
+  routerLink:'/sound'
 },
 {
   id:1,
-  text:'Đồng Hồ'
+  text:'Đồng Hồ',
+  routerLink:'/clock'
 },
 {
   id:1,
-  text:'Thu Cũ'
+  text:'Thu Cũ',
+  routerLink:'/oldautumn'
 },
 {
   id:1,
-  text:'Hàng Cũ'
+  text:'Hàng Cũ',
+  routerLink:'/secondhandgoods'
 },
 {
   id:1,
-  text:'Tivi'
+  text:'Tivi',
+  routerLink:'/television'
 },
 {
   id:1,
-  text:'Tin Công Nghệ'
+  text:'Tin Công Nghệ',
+  routerLink:'/technews'
 },
 {
   id:1,
-  text:'Khuyễn Mãi'
+  text:'Khuyễn Mãi',
+  routerLink:'/promotions'
+},
+{
+  id:1,
+  text:'Phụ Kiện',
+  routerLink:'/accessory'
+},
+{
+  id:1,
+  text:'Nhà Thông Minh',
+  routerLink:'/smarthome'
 },
   ]
   product = [
